@@ -1,0 +1,22 @@
+====================================
+MEGHDOOT BOT DEPLOYMENT - SAVE THIS!
+====================================
+
+📌 GITHUB REPOSITORY URL:
+https://github.com/shrukrish0813/MeghdootBot.git 
+(Copy this for git remote add origin)
+
+📌 TELEGRAM BOT TOKEN:
+8128256275:AAFw21Efk09ju5Hi8MpBjVB7BFctDs331sM
+(Keep this secret! Never share)
+
+📌 RAILWAY URL (add later after deployment):
+https://meghdoot-production-xxxx.up.railway.app
+
+📌 WEBHOOK URL (add later):
+https://meghdoot-production-xxxx.up.railway.app/6123456789:AAHdqTcvCH1vGWJxfSeofSAs0K5PALDsaw
+
+====================================
+Created: 11 Feb 2026
+Project: Meghdoot Weather Bot
+====================================
