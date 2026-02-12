@@ -2,13 +2,14 @@ import os
 import requests
 from dotenv import load_dotenv
 
+# Load environment variables
 load_dotenv()
-TOKEN = os.getenv("TELEGRAM_TOKEN")
+TOKEN = os.getenv('TELEGRAM_TOKEN')
 
 # ⚠️ IMPORTANT: REPLACE THIS WITH YOUR ACTUAL RAILWAY URL!
 RAILWAY_URL = "https://meghdoot.up.railway.app/"  # CHANGE THIS!
 
-# Construct URLs
+# Construct webhook URL
 webhook_url = f"{RAILWAY_URL}/{TOKEN}"
 api_url = f"https://api.telegram.org/bot{TOKEN}/setWebhook"
 
@@ -32,7 +33,6 @@ try:
             print(f"   {webhook_url}")
             print(f"\n📱 Telegram Bot:")
             print(f"   https://t.me/MeghdootWeatherBot")
-            print(f"\n🌍 Anyone can use it NOW!")
         else:
             print(f"❌ Telegram API Error: {result.get('description')}")
     else:
@@ -44,10 +44,10 @@ except Exception as e:
 
 print("=" * 60)
 
-# Check webhook status
+# Verify webhook
 print("\n📊 Verifying webhook...")
-check_url = f"https://api.telegram.org/bot{TOKEN}/getWebhookInfo"
 try:
+    check_url = f"https://api.telegram.org/bot{TOKEN}/getWebhookInfo"
     response = requests.get(check_url)
     data = response.json()
     if data['ok']:

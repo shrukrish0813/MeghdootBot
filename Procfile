@@ -1,1 +1,1 @@
-web: python meghdoot_webhook.py 
+web: python meghdoot.py 
